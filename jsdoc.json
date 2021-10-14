@@ -1,0 +1,38 @@
+{
+    "source": {
+    "include": ["src"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs)"
+},
+    "plugins": ["plugins/markdown", "jsdoc-http-plugin"],
+    "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true
+},
+        "markdown": {
+        "parser": "gfm",
+        "hardwrap": true,
+        "idInHeadings": true
+    },
+    "opts": {
+    "recurse": true,
+    "destination": "./docs/",
+    "template": "node_modules/docdash",
+    "readme":"./README.md"
+},
+
+ "docdash": {
+        "static": true,
+		"sort": false,
+		"meta": {
+			"title": "REST API",
+			"description": "A simple REST API to perform HTTP requests like GET,PUT,POST,DELETE..",
+			"keyword": ""
+		},
+        "search": true,
+        "collapse": true,
+        "typedefs": true,
+        "removeQuotes": "none"
+    }
+
+}

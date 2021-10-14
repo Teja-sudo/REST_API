@@ -1,0 +1,32 @@
+{
+  "name": "rest_api_teja",
+  "version": "1.0.0",
+  "description": "A simple REST API to perform HTTP requests like GET,PUT,POST,DELETE.",
+  "main": "./src/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node ./src/app.js",
+    "restart": "nodemon ./src/app.js",
+    "test": "jest --coverage  --forceExit",
+    "doc": "jsdoc -c jsdoc.json"
+  },
+  "author": "Teja",
+  "license": "ISC",
+  "devDependencies": {
+    "docdash": "^1.2.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-jest": "^25.0.1",
+    "jest": "^27.2.5",
+    "jsdoc": "^3.6.7",
+    "jsdoc-http-plugin": "^0.3.2",
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "axios": "^0.22.0",
+    "express": "^4.17.1",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
